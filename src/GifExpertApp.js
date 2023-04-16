@@ -4,15 +4,10 @@ import { GifsGrid } from "./components/GifsGrid";
 import { useFetchGifs } from "./hooks/useFetchGifs";
 
 export const GitExpertApp = () => {
-  const [categories, setCategories] = useState(["Chipojo Lobaina"]);
-
-  // const handdleAdd = ()  => {
-  //setcategories( cats => [...categories, 'Chipojo Segundo']);
-  // }
-
+  const [categories, setCategories] = useState([ ]);
   return (
-    <>
-      <h2>GifExpertApp2</h2>
+    <div className="container">
+      <h2 className="root-name">GIF MANAGER</h2>
       <p>{ useFetchGifs }</p>      
       <AddCattegory setCategories={setCategories} />
       <hr />
@@ -24,6 +19,6 @@ export const GitExpertApp = () => {
         ))
         }
       </ol>
-    </>
+    </div>
   );
 };

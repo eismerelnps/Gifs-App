@@ -7,12 +7,12 @@ import { useFetchGifs } from "../hooks/useFetchGifs";
 export const GifsGrid = ({ category }) => {
 
     const { data:images, loading } = useFetchGifs(category);
-    
+
   return (
     <>
     <h3> {category}</h3>
     { loading && <p>Loading</p>}
-    <div className="item-container">
+    <div className="container">
      <ol>
         {
             images.map( img => (
