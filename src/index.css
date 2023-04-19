@@ -42,6 +42,9 @@ body {
   margin: 10px;
   padding: 25px;
 }
+.container-ol {
+  padding: 0;
+}
 h1 {
   color: rgba(0, 0, 0, 0.756);
 }
@@ -61,6 +64,9 @@ li:hover{
   font-size: 21px;
   transition: 150ms;
 }
+ol {
+  padding: 0;
+}
 form {
   width: 100%;
   margin: 0 auto;
@@ -71,4 +77,47 @@ input {
   border-radius: 15px;
   width: 90%;
   padding: 5px 10px;
+}
+@media screen and (max-width:500px) {
+  * {
+    font-size: 10px;
+  }
+  .container {
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .container-item {
+    padding: 10px;
+  }
+  .container-item__img {
+    /*min-width: 20%;*/
+    max-width: 100%;
+  }
+  .container-item__li{
+    margin: 5px;
+    padding: 15px;
+  }
+  h1 {
+    color: rgba(0, 0, 0, 0.756);
+  }
+  h2 {
+    color: rgb(65, 77, 242);
+    font-size: 20px;
+    margin: 15px;
+    padding: 15px;
+  }
+  /*li:hover{
+    background-color: rgba(131, 196, 252, 0.484);
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 21px;
+    transition: 150ms;
+  }*/
+  input {
+    width: 80%;
+    padding: 5px
+  }
+  .root-name {
+    color: blue;
+  }
 }

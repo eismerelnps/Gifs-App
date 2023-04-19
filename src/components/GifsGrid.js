@@ -13,7 +13,7 @@ export const GifsGrid = ({ category }) => {
     <h3> {category}</h3>
     { loading && <p>Loading</p>}
     <div className="container">
-     <ol>
+     <ol className="container-ol">
         {
             images.map( img => (
                 <GifsGridItem 
