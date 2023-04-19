@@ -22,6 +22,13 @@ body {
   text-align: center;
   padding: 20px;
 }
+.container-item:hover {
+  background-color: rgba(131, 196, 252, 0.484);
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+  font-size: 21px;
+  transition: 150ms;
+}
 .container-item__img {
   border-radius: 15px;
   height: auto;
@@ -60,7 +67,7 @@ form {
   text-align: center;
 }
 input {
-  border: 1px solid rgb(20, 132, 230);
+  border: 1px solid rgb(10, 129, 234);
   border-radius: 15px;
   width: 90%;
   padding: 5px 10px;
